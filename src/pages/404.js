@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "./index.css";
-import { parse } from "path";
-import Link from "next/link";
+import  { useEffect, useState } from "react";
+
 import { useRouter } from "next/router";
 import Index from "./index"
 const ErrorPage = () => {
@@ -30,7 +28,7 @@ const ErrorPage = () => {
  const [color,newcolor]=useState('red')
     const [random,newrand]=useState(0)
 useEffect(()=>{
-const ra=setInterval(() => {
+setInterval(() => {
    
   let gh=parseInt(Math.random()*100)
   newrand(gh)
