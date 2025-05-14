@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "homepage": " https://sakshamgupta123456.github.io/next-js-navbar",
-  "scripts": {
-    "build": "next build && next export",
-    "deploy": "gh-pages -d out",
-    "dev": "next dev",
-    "start": "next start",
-    "export": "next export"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "postexport": "shx touch out/.nojekyll",
+  "deploy": "npm run build && npm run postexport && npx gh-pages -d out"
+},
   "dependencies": {
     "next": "15.3.2",
     "react": "^19.0.0",
@@ -24,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "gh-pages": "^6.3.0",
+    "shx": "^0.4.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

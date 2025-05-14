@@ -1,5 +1,6 @@
 
 const Index=()=>{
+
   return(
    <>
  <div className="flex justify-center mt-6">
