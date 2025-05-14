@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[845],{2814:(_,e,s)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/home",function(){return s(6939)}])},6939:(_,e,s)=>{"use strict";s.r(e),s.d(e,{default:()=>u});var n=s(7876);let u=()=>(0,n.jsx)("h1",{children:"sksl"})}},_=>{var e=e=>_(_.s=e);_.O(0,[636,593,792],()=>e(2814)),_N_E=_.O()}]);
